@@ -27,6 +27,7 @@ def save_data(df):
 def etl_pipeline():
     data = fetch_data()
     df = transform_data(data)
+    save_data(df)
 
 
 if __name__ == "__main__":
